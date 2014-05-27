@@ -1,0 +1,875 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #5a5a5a;
+}
+
+
+/* MAIN CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 600px;
+}
+.carousel .carousel-inner {
+	height:600px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  background:rgba(0,0,0,0.4);
+  padding:20px;
+
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+  background-color: #fff;
+  background-size: cover; border-bottom: solid 4px rgba(0, 0, 0, 0.4);
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 440px;
+  background-size: cover;
+  background-position:center;
+  box-shadow: inset 0 0 200px rgba(0,0,0,.5);
+}
+
+/* REGULAR CAROUSEL
+-------------------------------------------------- */
+.carousel2 {
+  height: 370px !important;
+}
+/* Declare heights because of positioning of img element */
+.carousel2 .item {
+  height: auto !important;
+  background-color: #f7f7f7;
+  padding:20px;
+  padding-top:0px;
+  border-bottom:none;
+}
+.carousel2 .carousel-inner {
+	padding-top:20px;
+}
+.carousel2-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: auto !important;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/** Top Navbar **/
+.top-navbar {
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+/** Search Bar **/
+.hotel-search {
+	background:#fff;
+	box-shadow:0px 0px 2px rgba(0,0,0,0.5);
+	padding-top:10px;
+	padding-bottom:8px;
+	border-bottom:solid 1px #ddd;
+}
+.search-input {
+	height:40px;
+	font-size:17px;
+}
+.search-input-typeahead {
+	height:40px;
+	font-size:12px;
+}
+.search-requirements-button {
+	height:40px;
+	border:dotted 2px #ccc;
+}
+.search-button {
+	height:40px;
+}
+.room-card h4 {
+	margin-top:0px;
+	font-size:12px;
+	color:#aaa;
+	line-height:20px;
+}
+.room-card h3 {
+	font-size:17px;
+	margin-top:0px;
+	line-height:40px;
+}
+.room-card h5 {
+	font-size:14px;
+	margin-top:0px;
+	line-height:40px;
+}
+.room-card select {
+}
+#room-information {
+display:none;
+}
+
+
+/** Misc **/
+
+/** Small Loader **/
+.loader-container {
+	position:fixed; top:100px; z-index:9999; left:50%; width:200px; height:200px; background:rgba(255,255,255,0.8); border-radius:3px; margin-left:-100px;
+}
+.loader-container h4 {
+	margin-top:155px; text-align:center;
+}
+
+/** Large Loader **/
+.loader-container-large {
+	position:fixed; top:100px; z-index:9999; left:50%; width:400px; height:400px; background:rgba(255,255,255,0.8); border-radius:3px; margin-left:-200px;
+}
+.loader-container-large h4 {
+	margin-top:280px; text-align:center; font-size:25px;
+}
+.loader-container-large p {
+	margin-top:20px; text-align:center; font-size:13px;
+}
+.social-icons a i {
+	font-size:27px;
+}
+.card {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border:solid 1px #e8e8e8;
+}
+.card-hover {
+
+}
+.card-hover:hover {
+	border-color:#d2bdff;
+}
+
+.hotel-card {
+	border:solid 1px #efefef;
+	padding:10px;
+	background:#fff;
+	border-bottom:solid 1px #ddd;
+	border-bottom:solid 2px #d7d7d7;
+	margin-bottom:10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.hotel-card-grid {
+	background:#fff;
+	border-bottom:solid 2px #d7d7d7;
+	margin-bottom:10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	display:block;
+}
+.hotel-card-grid .body {
+	padding:10px;
+
+}
+.hotel-card-grid .body .book-button {
+	margin-top:-30px; text-align:center;
+	margin-bottom:20px;
+}
+.hotel-card-grid img {
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.hotel-card-grid .body .price {
+	font-size:23px;
+	color:#a68cf5; font-weight:bold;
+}
+.hotel-card:hover  {
+	background:#fff;
+	border-bottom:solid 1px #bbb;
+	border-bottom:solid 2px #aaa;
+}
+.hotel-card .rating {
+	color:#ffcb00;
+}
+.hotel-card h4 a:hover {
+	text-decoration:none;
+}
+.hotel-card p {
+	color:#666;
+	font-size:13px;
+}
+.hotel-card .price {
+	color:#a68cf5;
+	line-height:36px;
+	font-size:25px;
+}
+.inner-card {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background:#f8f8f8;	
+}
+.inner-card2 {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background:#fff;		
+	border-bottom:solid 2px #ddd;
+}
+.inner-card3 {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background:#fff;		
+	border:solid 1px #ddd;
+}
+.inner-card2 h3,.inner-card3 h3 {
+	margin-top:0px;
+	color:#555;
+	font-size:17px;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:dotted 1px #ccc;
+}
+.inner-card2 h4,.inner-card4 h4 {
+	margin-top:10px;
+	color:#666;
+	font-size:15px;
+	margin-bottom:20px;
+	
+}
+.inner-card2 p,.inner-card3 p {
+	color:#777;
+	line-height:24px;
+	font-size:13px;
+}
+
+
+.label-helper {
+	color:#aaa; font-size:11px; text-transform: uppercase;
+}
+.telephone {
+	color:#9276e7; font-weight:bold;
+}
+.info-bar {
+	padding-bottom:40px;
+	background:#f8f8f8; padding-top:30px;
+}
+.info-caption {
+	margin-left:10px;
+}
+.modal-gray-bg {
+	background:#f7f7f7;
+}
+.gray-bg {
+	background:#f3f3f3 !important;
+	border-bottom:none !important;
+}
+
+/** Padding **/
+.pad10 {
+	padding:10px;
+}
+.pad20 {
+	padding:20px;
+}
+.padb10 {
+	padding-bottom:10px;
+}
+.padt20 {
+	padding-top:20px;
+}
+.padb20 {
+	padding-bottom:20px;
+}
+.padb40 {
+	padding-bottom:40px;
+}
+.padt40 {
+	padding-top:40px;
+}
+.padt60 {
+	padding-top:60px;
+}
+.padb60 {
+	padding-bottom:60px;
+}
+
+/** Margins **/
+.mgt-1 {
+	margin-top:-1px;
+}
+.mgt0 {
+	margin-top:0px;
+}
+.mgt10 {
+	margin-top:10px;
+}
+.mgt12 {
+	margin-top:12px;
+}
+.mgt20 {
+	margin-top:20px;
+}
+.mgt30 {
+	margin-top:30px;
+}
+.mgt40 {
+	margin-top:40px;
+}
+.mgt50 {
+	margin-top:50px;
+}
+.mgt60 {
+	margin-top:60px;
+}
+.mgb0 {
+	margin-bottom:0px;
+}
+.mgb2 {
+	margin-bottom:2px;
+}
+.mgb10 {
+	margin-bottom:10px;
+}
+.mgb20 {
+	margin-bottom:20px;
+}
+.mgb40 {
+	margin-bottom:40px;
+}
+.mgb60 {
+	margin-bottom:60px;
+}	
+.mgt100 {
+	margin-top:100px;
+}
+.mgt200 {
+	margin-top:200px;
+}
+
+/** Font Sizes **/
+.fs11 {
+	font-size:11px;
+}
+.fs12 {
+	font-size:12px;
+}
+.fs13 {
+	font-size:13px;
+}
+.fs15 {
+	font-size:15px;
+}
+.fs21 {
+	font-size:21px;
+}
+.lh30 {
+	line-height:30px;
+}
+.lh32 {
+	line-height:32px;
+}
+.h38 {
+	min-height:38px;
+}
+
+.shadow1 {
+	box-shadow:0px 0px 10px rgba(0,0,0,0.3);
+}
+.width120 {
+	width:120px;
+}
+
+/** Colors **/
+.gray {
+	color:#777;
+}
+.dgray {
+	color:#333;
+}
+.lgray {
+	color:#aaa;
+}
+.lgray2 {
+	color:#ddd;
+}
+
+/** Line Heights **/
+.lh22 {
+	line-height:22px;
+}
+.lh24 {
+	line-height:24px;
+}
+.lh30 {
+	line-height:30px;
+}
+
+/** HOME PAGE **/
+
+.header {
+	border-bottom:dotted 1px #e1e1e1;
+	color:#333;
+	padding-bottom:20px;
+	font-size:24px;
+}
+
+.caption {
+	background: rgba(0,0,0,0.5);
+	padding:20px 40px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top:110px;
+	text-align:center;
+}
+.caption h1 {
+	color:#fff;
+	font-size:43px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.caption p {
+	margin-top:30px;
+	color:#fff;
+}
+
+.discount {
+	text-align:center;
+	padding:10px;
+	box-shadow:0px 0px 10px #e8e8e8;
+	background:#fff;
+}
+.discount h4 {
+	margin-top:20px;
+	color:#666;
+	margin-bottom:5px;
+}
+.discount h3 {
+	color:#e33033;
+	font-size:21px;
+	margin-top:5px;
+}
+.discount p {
+	color:#999;
+}
+
+.selection {
+	text-align:center;
+	padding:10px;
+	margin-bottom:10px;
+	box-shadow:0px 0px 10px #e8e8e8;
+	background:#fff;
+}
+.discount:hover,.selection:hover{
+	box-shadow:0px 0px 10px rgba(195,173,255,0.5);
+}
+.selection ul {
+	list-style-type: none;
+	padding-left:0px;
+	margin-left:0px;
+	margin-bottom:0px;
+}
+.selection ul li a {
+	font-size:13px;
+	line-height:28px;
+}
+.selection p {
+	color:#333;
+	font-weight:bold;
+	font-style: italic;
+	margin-top:8px;
+	font-size:12px;
+}
+.whitebg {
+	background:#fff;
+}
+
+/** RESULTS PAGE **/
+.results-page {
+	background:#f7f7f7;
+	padding-top:20px;
+	padding-bottom:40px;
+}
+.results-bar {
+	line-height:50px;
+	background:#f9f9f9;
+}
+.page-bottom {
+	line-height:50px;
+	font-size:13px;
+	color:#666;
+	margin-top:20px;
+}
+.search-title {
+	font-size:19px;
+}
+.sub-search-title {
+	font-size:13px; color:#777;	
+}
+.grid-location {
+	margin-bottom:2px;
+	font-size:13px;
+	color:#777;
+	line-height:26px;
+}
+.price {
+	
+}
+
+
+/** CUSTOM MOBILE **/
+@media (max-width: 767px) {
+	.mgt200 {
+		margin-top:40px; margin-bottom:20px;
+	}
+	.mgt100 {
+		margin-top:40px; margin-bottom:20px;
+	}
+	.mcenter {
+		text-align:center;
+	}
+
+	.mmgt20 {
+		margin-top:20px;
+	}
+	.mmgb20 {
+		margin-bottom:20px;
+	}
+	.mpadr20 {
+		padding-right:20px;
+	}
+	.mrating {
+		display:block;
+		margin-top:10px;
+	}
+}
+/** Loading **/
+.loading {
+	display:none;
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+	background:rgba(255,255,255,0.8);
+	border-radius:4px;
+}
+.loading-container {
+	background:rgba(0,0,0,0.2);
+	text-align:center;
+	line-height:200px;
+	margin-left:auto;margin-right:auto;
+	border-radius:4px;
+	width:200px;
+	margin-top:40px;
+}
+
+/** Single Hotel Page **/
+.single-hotel-toolbar {
+	line-height:40px; font-size:15px; color:#666;
+}
+.thumbnails {
+	list-style-type: none;
+	margin-left:0px; padding-left:0px;
+}
+.thumbnails li {
+	display:inline-block;margin-right:3px;
+	margin-bottom:10px;
+}
+.thumbnails li img {
+	opacity:0.7;
+	border:solid 1px #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.thumbnails li img:hover {
+	opacity:1.0;
+	cursor:pointer;
+	border:solid 1px #aaa;
+}
+.card-available {
+	background:#fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border:solid 2px #ccc;
+}
+.card-available h3 {
+	background:#ccc;
+	padding:10px;
+	line-height:30px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.card-room {
+	border-top:solid 1px #ddd;
+	padding:12px;
+}
+.card-room h4 {
+	margin-top:0px; margin-bottom:10px;
+	color:#333; font-size:23px;
+}
+.card-room p {
+	margin-bottom:2px; font-size:13px;
+}
+.features {
+	margin-left:0px; padding-left:0px;
+	list-style-type: none;
+}
+.features li {
+	background:#f7f7f7; padding:8px 16px; display:inline-block;
+	margin-right:5px; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color:#777; font-size:12px; text-align:center; margin-bottom:10px;
+}
+.features li img {
+	margin-bottom:10px;
+}
+.top-panel {
+	background:#f5f5f5;
+	line-height:20px;
+	font-size:15px;
+	margin-top:0px;
+	padding:10px;
+	margin-bottom:0px;
+}
+.more-information {
+	background:#f9f9f9;
+	padding:8px 12px;
+	border-radius:10px;
+}
+.more-information:hover {
+	background:#f5f5f5;
+	text-decoration:none;
+	color:#997ce6;
+}
+
+/** About **/
+.about-bar {
+	margin-top:-62px;
+}
+.description {
+	color:#666; font-size:13px; line-height:24px; margin-top:20px;
+}
+
+/** Price Match **/
+.price-promise {
+	background:url("http://placehold.it/1920x300") no-repeat center; background-size:cover; height:320px;
+}
+.jumbo-dialog {
+	background:rgba(0,0,0,0.3);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding:20px;
+	color:#fafafa;
+	text-align:center;
+	margin-top:80px;
+}
+.jumbo-dialog h1 {
+	margin-top:0px;
+}
+.jumbo-dialog p {
+	font-size:17px; line-height:30px; color:#fafafa;
+}
+
+/** Concierge **/
+.concierge {
+	background:url("http://placehold.it/1920x600") no-repeat center; background-size:cover; height:600px;
+}
+
+/** Sign In **/
+.signin-bg {
+	background:#fff; background-size:cover; height:600px;
+}
+.card-signin {
+	background:#e8e8e8;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top:80px;
+	box-shadow: inset 0 0 200px rgba(255,255,255,0.5);
+}
+/** Checkout **/
+.trip-section {
+ padding-bottom:10px; border-bottom:solid 1px #e8e8e8;
+}
+.checkout-top-panel {
+	line-height:40px;
+	font-size:13px;
+}
+
+.home-page {
+	background:#f7f7f7;
+}
+
+/** MISC **/
+.navbtn {
+	font-weight:bold;
+	font-size:12px;
+}
+.border-top-none {
+	border-top:none !important;
+}
+.bbtm {
+	border-bottom:solid 1px #ddd !important;
+}
+.bgf5 {
+	background:#f5f5f5;
+	padding-top:40px; padding-bottom:3o0px;
+}
+
+/** INLINE HOTEL SEARCH **/
+.inline-room-information {
+	background:#ddd;
+	padding:20px; 
+	margin-top:5px;
+	text-align:left;
+}
+.inline-room-information h5 {
+	margin-top:0px;
+	margin-bottom:0px;
+	line-height:24px;
+}
+
+
+/** HOME HOTEL CARD **/
+.inner-hotel-card {
+	background:#f7f7f7;
+	box-shadow:0px 0px 4px 2px rgba(0,0,0,0.4);
+	margin-top:-490px;
+}
+.inner-hotel-card .section {
+	padding:20px;
+	border-bottom:solid 1px #e8e8e8;
+	border-top:solid 1px #fff;
+}
+.inner-hotel-card .section h4 {
+	color:#997ce6;
+	margin-top:0px;
+}
+.inner-hotel-card .section h5 {
+	margin-top:0px;
+	font-size:15px;
+}
+
+.search-input-home {
+	height:40px;
+	font-size:15px;
+}
+.xs-text {
+	font-size:11px; color:#444; margin-bottom:4px;
+}
+.xs-select {
+	height:24px;
+	line-height:10px;
+	font-size:12px;
+	padding:0px;
+}
+
+
+/** CSS add to bootstrap **/
+.form-control {
+	border-radius:3px;
+	border-top:solid 1px #c1c1c1;
+}
+.form-control:focus {
+	border-width:2px;
+}
+
+/** Search Page **/
+.search-page {
+	padding-top:20px; padding-bottom:20px; background:#f9f9f9;
+}
+.search-page-title {
+	font-size:21px;
+	font-weight:normal;
+	color:#333;
+}
+
+/** Itineraries **/
+.itinerary-card {
+	border:solid 1px #e8e8e8;
+	border-bottom:solid 2px #ddd;
+	margin-bottom:20px;
+	border-radius:3px;
+}
+.itinerary-card .header {
+	background:#f7f7f7;
+	font-size:15px;
+	line-height: 30px;
+	text-indent:10px;
+	font-weight:bold;
+	border-bottom:solid 1px #e8e8e8;
+	margin-bottom:0px; padding-bottom:0px;
+}
+.itinerary-card .body {
+	padding:10px; background:#fafafa;
+}
+
+.ticket-more {
+	background:#f7f7f7;
+	text-align:center;
+	font-size:12px;
+	line-height:24px;
+}
+.password-card {
+	border-top:solid 1px #e8e8e8;
+	padding-top:10px;
+	border-bottom:solid 1px #e8e8e8;
+	margin-bottom:10px;
+}
+
+.radius3 {
+	border-radius:3px;
+}
+.admin-active {
+	color:#bbb !important;
+}
