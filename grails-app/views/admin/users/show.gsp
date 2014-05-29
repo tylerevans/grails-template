@@ -8,15 +8,11 @@
 	
 		<g:render template="/layouts/includes/nav-admin" model="[active:'users']"></g:render>
 		
-		<div class='gray-bg padt20 padb20 mgt-1 bbtm'>
+		<div class='gray-bg padt20 padb10 mgt-1 bbtm'>
 			<div class='container'>
 				<div class='row'>
-					<div class='col-xs-8'>
-						<h3 class='mgt0'>Users</h3>
-						<h4 class='fs15 mgb0'>Tyler Evans</h4>
-					</div>
-					<div class='col-xs-4 text-right'>
-						<button class='btn btn-default btn-sm'>Back to Users</button>
+					<div class='col-xs-12'>
+						<h3 class='mgt0'><a>Users</a> <i class="fa fa-angle-double-right lgray"></i> Tyler Evans</h3>
 					</div>
 				</div>
 			</div>

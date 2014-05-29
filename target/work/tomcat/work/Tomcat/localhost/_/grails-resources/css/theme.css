@@ -12,10 +12,10 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 600px;
+  height: 620px;
 }
 .carousel .carousel-inner {
-	height:600px;
+	height:620px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -27,7 +27,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 600px;
+  height: 620px;
   background-color: #fff;
   background-size: cover; border-bottom: solid 4px rgba(0, 0, 0, 0.4);
 }
@@ -40,6 +40,34 @@ body {
   background-size: cover;
   background-position:center;
   box-shadow: inset 0 0 200px rgba(0,0,0,.5);
+}
+.display-hotel-row1, .display-hotel-row2 {
+	margin-top:100px; height:210px; padding:10px; background:rgba(0,0,0,0.2); border-radius:4px;
+	color:#fff;
+	opacity:0.6;
+	padding-bottom:5px;
+}
+.display-hotel-row1 h4 a,.display-hotel-row2 h4 a {
+	border-radius:4px;
+	margin-bottom:4px;
+	color:#fff;
+}
+.display-hotel-row1 h4 a,.display-hotel-row2 h4 a:hover {
+	text-decoration:none;
+}
+.display-hotel-row2 {
+	margin-top:20px;
+}
+.display-hotel-row1 img,.display-hotel-row2 img {
+	border-radius:3px;
+	margin-bottom:4px;
+}
+.display-hotel-row1:hover, .display-hotel-row2:hover {
+	opacity:1.0;
+	background:rgba(0,0,0,0.3);
+}
+#home-carousel .carousel-indicators {
+	bottom:8px;
 }
 
 /* REGULAR CAROUSEL
@@ -150,7 +178,16 @@ display:none;
 
 
 /** Misc **/
-
+#loading {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+	width:100%;
+	height:100%;
+	background:rgba(200,200,200,0.8);
+	display:none;
+}
 /** Small Loader **/
 .loader-container {
 	position:fixed; top:100px; z-index:9999; left:50%; width:200px; height:200px; background:rgba(255,255,255,0.8); border-radius:3px; margin-left:-100px;
@@ -403,6 +440,9 @@ display:none;
 .fs15 {
 	font-size:15px;
 }
+.fs16 {
+	font-size:16px;
+}
 .fs21 {
 	font-size:21px;
 }
@@ -558,34 +598,6 @@ display:none;
 }
 .price {
 	
-}
-
-
-/** CUSTOM MOBILE **/
-@media (max-width: 767px) {
-	.mgt200 {
-		margin-top:40px; margin-bottom:20px;
-	}
-	.mgt100 {
-		margin-top:40px; margin-bottom:20px;
-	}
-	.mcenter {
-		text-align:center;
-	}
-
-	.mmgt20 {
-		margin-top:20px;
-	}
-	.mmgb20 {
-		margin-bottom:20px;
-	}
-	.mpadr20 {
-		padding-right:20px;
-	}
-	.mrating {
-		display:block;
-		margin-top:10px;
-	}
 }
 /** Loading **/
 .loading {
@@ -760,6 +772,7 @@ display:none;
 }
 .bbtm {
 	border-bottom:solid 1px #ddd !important;
+	border-top:solid 1px #ddd !important;
 }
 .bgf5 {
 	background:#f5f5f5;
@@ -784,7 +797,7 @@ display:none;
 .inner-hotel-card {
 	background:#f7f7f7;
 	box-shadow:0px 0px 4px 2px rgba(0,0,0,0.4);
-	margin-top:-490px;
+	margin-top:-550px;
 }
 .inner-hotel-card .section {
 	padding:20px;
@@ -793,7 +806,7 @@ display:none;
 }
 .inner-hotel-card .section h4 {
 	color:#997ce6;
-	margin-top:0px;
+	margin-top:10px;
 }
 .inner-hotel-card .section h5 {
 	margin-top:0px;
@@ -871,5 +884,70 @@ display:none;
 	border-radius:3px;
 }
 .admin-active {
-	color:#bbb !important;
+	color:#777 !important;
+	background:#f3f3f3;
+	border-radius:0px !important;
+	border:solid 1px #ddd;
+}
+.admin-hover:hover {
+	background:none !important;
+	color:#07558c;
+	border-radius:0px !important;
+}
+.reply {
+	font-size:13px;
+	color:#444;
+	margin-top:10px; margin-bottom:10px;
+	padding-bottom:10px; border-bottom:dotted 1px #ccc;
+}
+.form-actions {
+	margin-top:20px;
+	border-top:solid 1px #ddd;
+	text-align:right;
+	background:#fafafa;
+	padding:10px;
+}
+.parameter {
+	color:#fafafa;
+	opacity:0.8;
+}
+.parameter:hover {
+	color:#fff;
+	opacity:1.0;
+}
+
+
+
+/** CUSTOM MOBILE **/
+@media (max-width: 767px) {
+	.mgt200 {
+		margin-top:40px; margin-bottom:20px;
+	}
+	.mgt100 {
+		margin-top:40px; margin-bottom:20px;
+	}
+	.mcenter {
+		text-align:center;
+	}
+
+	.mmgt20 {
+		margin-top:20px;
+	}
+	.mmgb20 {
+		margin-bottom:20px;
+	}
+	.mpadr20 {
+		padding-right:20px;
+	}
+	.mpadl20 {
+		padding-left:20px;
+	}
+	.mrating {
+		display:block;
+		margin-top:10px;
+	}
+	.inner-hotel-card {
+		margin-top:-575px;
+		margin-bottom:60px;
+	}
 }

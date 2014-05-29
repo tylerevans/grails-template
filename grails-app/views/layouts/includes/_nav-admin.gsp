@@ -1,10 +1,10 @@
-<ul class="nav nav-pills nav-justified">
+<ul class="nav nav-pills nav-justified mgt10">
 
 	<g:if test="${active=='tickets' }">
 		<li class="active"><a class='gray-bg admin-active' href="#">Concierge Tickets</a></li>
 	</g:if>
 	<g:else>
-		<li><a href="#">Concierge Tickets</a></li>
+		<li><a class='admin-hover' href="/admin/tickets">Concierge Tickets</a></li>
 	</g:else>
 	
 	
@@ -12,7 +12,7 @@
 		<li class='active'><a class='gray-bg admin-active' href="#">Hotel Deals</a></li>
 	</g:if>
 	<g:else>
-		<li><a href="#">Hotel Deals</a></li>
+		<li><a class='admin-hover' href="/admin/deals">Hotel Deals</a></li>
 	</g:else>
 	
 	
@@ -20,7 +20,7 @@
 		<li class='active'><a class='gray-bg admin-active' href="#">Bookings</a></li>
 	</g:if>
 	<g:else>
-		<li><a href="#">Bookings</a></li>
+		<li><a class='admin-hover' href="/admin/bookings">Bookings</a></li>
 	</g:else>
 	
 	
@@ -28,7 +28,7 @@
 		<li class='active'><a class='gray-bg admin-active' href="#">Users</a></li>
 	</g:if>
 	<g:else>
-		<li><a href="#">Users</a></li>
+		<li><a class='admin-hover' href="/admin/users">Users</a></li>
 	</g:else>
 	
 	
@@ -36,22 +36,14 @@
 		<li class='active'><a class='gray-bg admin-active' href="#">Corporates</a></li>
 	</g:if>
 	<g:else>
-		<li><a href="#">Corporates</a></li>
+		<li><a class='admin-hover' href="/admin/corporates">Corporates</a></li>
 	</g:else>
 	
 	<g:if test="${active=='campaigns' }">
 		<li class='active'><a class='gray-bg admin-active' href="#">Campaigns</a></li>
 	</g:if>
 	<g:else>
-		<li><a href="#">Campaigns</a></li>
+		<li><a class='admin-hover' href="/admin/campaigns">Campaigns</a></li>
 	</g:else>
-	
-	
-	
-
-	
-	
-	
-	
 	
 </ul>

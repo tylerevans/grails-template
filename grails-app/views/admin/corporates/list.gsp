@@ -6,21 +6,16 @@
 	</head>
 	<body>
 	
-		<g:render template="/layouts/includes/nav-admin" model="[active:'tickets']"></g:render>
+		<g:render template="/layouts/includes/nav-admin" model="[active:'corporates']"></g:render>
 		
 		<div class='gray-bg padt20 padb10 mgt-1 bbtm'>
 			<div class='container'>
 				<div class='row'>
 					<div class='col-sm-6'>
-						<h3 class='mgt0'>Concierge Tickets <i class="fa fa-angle-double-right lgray"></i> All </h3>
+						<h3 class='mgt0'>Corporates <i class="fa fa-angle-double-right lgray"></i> All </h3>
 					</div>
-					<div class='col-sm-3'>
-						<div class="input-group input-group-sm">
-						  <input type="text" class="form-control" placeholder="Search by Reference">
-						  <span class="input-group-btn">
-							<button class="btn btn-default" type="button">Search</button>
-						  </span>
-						</div>
+					<div class='col-sm-2 text-right col-sm-offset-1'>
+						<button class='btn btn-primary btn-sm width120'>Create Corporate</button>
 					</div>
 					<div class='col-sm-3'>
 						<div class="input-group input-group-sm">
@@ -37,10 +32,6 @@
 		<div class='container'>
 			<div class='row mgt20'>
 				<div class='col-sm-12'>
-				
-					<div class='hidden mgb40'>
-						<g:render template="/layouts/templates/no-items" model="[h3:'No Concierge Tickets', h4:'There are no concierge tickets in your queue.']"></g:render>
-					</div>
 					<div class='text-right fs12'>
 					  	Displaying <b>1-10</b> of <b>53</b>
 					</div>
@@ -48,16 +39,18 @@
 					  <table class="table table-bordered table table-striped">
 						<thead>
 							<tr>
-								<th class='fs12' style='width:117px; background:#efefef;'>Reference</th>
-								<th class='fs12' style='width:117px; background:#efefef;'>Date Created</th>
-								<th class='fs12' style='width:100px; background:#efefef;'>Status</th>
-								<th class='fs12' style='width:80px; background:#efefef;'>Replies</th>
-								<th class='fs12' style='width:200px; background:#efefef;'>Name</th>
-								<th class='fs12' style='background:#efefef;'>Enquiry</th>
+								<th class='fs12' style='background:#efefef;'>ID</th>
+								<th class='fs12' style='background:#efefef;'>Name</th>
+								<th class='fs12' style='background:#efefef;'>URL</th>
+								<th class='fs12' style='background:#efefef;'>Rebate</th>
+								<th class='fs12' style='background:#efefef;'>Campaigns</th>
+								<th class='fs12' style='background:#efefef;'>Bookings</th>
+								<th class='fs12' style='background:#efefef;'>Amount Processed</th>
+								<th class='fs12' style='background:#efefef;'>Actions</th>
 							</tr>
 						</thead>
 						<tbody>
-							<g:render template="/layouts/templates/admin-ticket"></g:render>
+							<g:render template="/layouts/templates/admin-corporate"></g:render>
 						</tbody>
 					  </table>
 					</div>

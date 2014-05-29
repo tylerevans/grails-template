@@ -31,15 +31,24 @@
 				<li><a href="#">CONTACT US</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<form class='mpadr20 mpadl20'>
-					<button data-toggle="modal" data-target="#join-modal" type="button"
-						class="btn btn-primary navbar-btn navbtn">JOIN</button>
-					&nbsp;
-					<button type="button" data-toggle="modal"
-						data-target="#signin-modal"
-						class="btn btn-primary navbar-btn navbtn">SIGN IN</button>
+	            <form class='mpadr20'>
+					<div class="btn-group mgt10">
+					  <button type="button" class="btn btn-primary">Tyler Evans</button>
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu">
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">My Itinerary</a></li>
+						<li><a href="#">My Concierge Tickets</a></li>
+						<li><a href="#">My Favourite Hotels</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Log Out</a></li>
+					  </ul>
+					</div>
 				</form>
-			</ul>
+	         </ul>
 		</div>
 	</div>
 </div>

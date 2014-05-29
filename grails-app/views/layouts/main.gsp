@@ -23,11 +23,20 @@
 	</head>
 	<body>
 		
-		<g:render template="/layouts/includes/header"></g:render>
+		<shiro:authenticated>
+			<g:render template="/layouts/includes/header-app"></g:render>
+		</shiro:authenticated>
+		
+		<shiro:notAuthenticated>
+			<g:render template="/layouts/includes/header"></g:render>
+		</shiro:notAuthenticated>
+		
 		
 		<g:layoutBody/>
 		
+		
 		<g:render template="/layouts/includes/footer"></g:render>
+		
 		
 		<!-- Modals for Sign In/Join IF No User Authenticated -->
 		<shiro:notAuthenticated>

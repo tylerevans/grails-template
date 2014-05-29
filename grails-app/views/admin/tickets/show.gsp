@@ -8,15 +8,14 @@
 	
 		<g:render template="/layouts/includes/nav-admin" model="[active:'tickets']"></g:render>
 		
-		<div class='gray-bg padt20 padb20 mgt-1 bbtm'>
+		<div class='gray-bg padt20 padb10 mgt-1 bbtm'>
 			<div class='container'>
 				<div class='row'>
-					<div class='col-xs-8'>
-						<h3 class='mgt0'>Concierge Tickets</h3>
-						<h4 class='fs15 mgb0'><span class='gray fs13'>Reference</span> 2987149872</h4>
+					<div class='col-sm-6'>
+						<h3 class='mgt0'><a>Concierge Tickets</a> <i class="fa fa-angle-double-right lgray"></i> Ref 789789464</h3>
 					</div>
-					<div class='col-xs-4 text-right'>
-						<button class='btn btn-default btn-sm'>Back to Concierge</button>
+					<div class='col-sm-6 text-right'>
+						<button class='btn btn-primary btn-sm width120'>Delete</button> <button class='btn btn-primary btn-sm width120'>Add Reply</button>
 					</div>
 				</div>
 			</div>
@@ -30,7 +29,7 @@
 						<table class='table table-bordered table-condensed'>
 							<tr>
 								<td class='fs12' style='background:#f3f3f3; width:100px;'>Reference</td>
-								<td>128937-ABD &nbsp; <span class='label label-success'>Solved</span></td>
+								<td>128937-ABD &nbsp; <span class='label label-success'>Solved</span> &nbsp; <span class='fs12 lgray'>(<a>Change Status</a>)</span></td>
 							</tr>
 							<tr>
 								<td class='fs12' style='background:#f3f3f3;'>Created</td>
@@ -46,16 +45,10 @@
 							</tr>
 							<tr>
 								<td class='fs12' style='background:#f3f3f3;'>
-									Actions
-									<div class='mgt10'><a data-toggle="modal" data-target="#comment-modal">Add Reply</a></div>
-									<div><a class='text-danger'>Delete Ticket</a></div>
+									History
 								</td>
 								<td>
-									<div class='fs13 mgray mgt10 mgb20'>
-										<div class='fs12 mgb10'><i><b>Tyler Evans</b> on <b>24-7-2014</b> (Last Updated: 24-8-2014)</i> &nbsp; <a>Edit</a> &nbsp; <a class='text-danger'>Remove</a></div>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-									</div>
-									<div class='ticket-more'><a>See More (5 Replies)</a></div>
+									<g:render template="/layouts/templates/ticket-reply"></g:render>
 								</td>
 							</tr>
 						</table>

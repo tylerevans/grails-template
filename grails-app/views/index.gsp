@@ -6,12 +6,14 @@
 	</head>
 	<body>
 	
+		<g:render template="/layouts/templates/loader-large"></g:render>
+	
 		<g:render template="/layouts/carousels/home"></g:render>
 		
 		<div class='home-page padb40'>
 			<div class='container'>
 	    		<div class='row'>
-	    			<div class='col-sm-4'>
+	    			<div class='col-sm-6 col-sm-offset-3'>
 	    				<g:render template="/layouts/forms/search-form"></g:render>	
 	    			</div>
 	    		</div>
@@ -96,7 +98,7 @@
 					</div>
 				</div>
 				
-				<div class='row'>
+				<div class='row hidden-xs'>
 					<div class='col-sm-12'>
 						<h2 class='header mgb20 mcenter'>SOCIAL HUB</h2>
 						<div class='row'>

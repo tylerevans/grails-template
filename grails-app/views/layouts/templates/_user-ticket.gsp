@@ -26,16 +26,7 @@
 				</div>
 			</td>
 			<td>
-				<!-- Comment -->
-				<div class='fs13 mgray mgt10 mgb20'>
-					<div class='fs12 mgb10'>
-						<i><b>Tyler Evans</b> on <b>24-7-2014</b> (Last Updated:
-							24-8-2014)</i> &nbsp; <a>Edit</a> &nbsp; <a class='text-danger'>Remove</a>
-					</div>
-					Lorem Ipsum is simply dummy text of the printing and typesetting
-					industry. Lorem Ipsum has been the industry's standard dummy text
-					ever since the 1500s.
-				</div> <!-- End Comment -->
+				<g:render template="/layouts/templates/ticket-reply"></g:render>
 
 				<div class='ticket-more'>
 					<a>See More (5 Replies)</a>

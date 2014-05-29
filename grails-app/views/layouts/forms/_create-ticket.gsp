@@ -3,7 +3,7 @@
 	<div class="form-group">
 		<label for="type" class="col-sm-3 control-label">Type</label>
 		<div class="col-sm-9">
-			<select class='form-control'>
+			<select class='form-control shadow_select'>
 				<option>General Enquiry</option>
 				<option>Cancel Reservation</option>
 			</select>
