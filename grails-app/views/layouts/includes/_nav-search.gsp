@@ -16,7 +16,7 @@
 <div>*****</div>
 
 <div class='mgt20'>Price Per Night</div>
-<div>Slider</div>
+<div><input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/></div>
 
 <div class='mgt20'>Area</div>
 

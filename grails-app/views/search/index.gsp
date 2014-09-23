@@ -26,9 +26,9 @@
 							<option>Rating</option>
 						</select> &nbsp; &nbsp; &nbsp;
 						<div class="btn-group">
-							<button type="button" class="btn btn-default active">List</button>
-							<button type="button" class="btn btn-default">Grid</button>
-							<button type="button" class="btn btn-default">Map</button>
+							<button type="button" class="btn btn-lg btn-default active">List</button>
+							<button type="button" class="btn btn-lg btn-default">Grid</button>
+							<button type="button" class="btn btn-lg btn-default">Map</button>
 						</div>
 					</div>
 				</div>
@@ -83,6 +83,13 @@
 			</div>
 	
 		<g:render template="/layouts/modals/enter-dates"></g:render>
+		
+		<!-- JS -->
+		<r:script>
+			$(document).ready(function() {
+				$("#ex2").slider({});
+			});
+		</r:script>
 		
 	</body>
 </html>
